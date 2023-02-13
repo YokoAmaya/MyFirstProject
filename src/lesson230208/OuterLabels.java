@@ -1,4 +1,4 @@
-package lesson080223;
+package lesson230208;
 
 public class OuterLabels {
     public static void main(String[] args) {
