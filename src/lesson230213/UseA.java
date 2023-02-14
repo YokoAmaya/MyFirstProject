@@ -1,6 +1,8 @@
 package lesson230213;
 
 public class UseA {
+
+
     public static void main(String[] args) {
         A.staticMethod();
         A a = new A();

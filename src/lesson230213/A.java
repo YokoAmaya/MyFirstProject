@@ -1,6 +1,12 @@
 package lesson230213;
 
 public class A {
+    private final int test = 30;
+
+    {
+        System.out.println("Я рооодился!)" + test);
+    }
+
 
     private static final int NONE = -1;
     private static int GlobalCount;
