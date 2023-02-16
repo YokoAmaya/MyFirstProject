@@ -24,5 +24,8 @@ public class InharitanceMethods2 {
     public static void main(String[] args) {
         C c = new C();
         System.out.println(c.calc());
+        /* Вывелась 4 потому что при создании экземпляра класса С
+         * мы обратились к ближайшей существующей функции тоесть к
+         * функции дедушки */
     }
 }
