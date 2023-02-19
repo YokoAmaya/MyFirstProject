@@ -6,25 +6,29 @@ public class PetCare {
         Dog dog = new Dog();
         Turtle turtle = new Turtle();
         Parrot parrot = new Parrot();
+        Raven raven = new Raven();
 
-        care(cat);
-        System.out.println(cat.toString());
+
+        //Обманываем компилятор
+        //Pet pettucchi = parrot; //неявное приведение типа
+        // (восходящее в стучае когда мы по иерархии идём в верх)
+        //((MammalPetWithFur) pettucchi).comb();
+
+        //Заменили на функцию с нефиксированным числом параметров
+        //cat.care();
+        //parrot.care();
+        //raven.care();
+        care(cat, dog, turtle, parrot, raven);
+
         //care(dog);
         //care(turtle);
 
     }
 
-    private static void care(Pet pet) {
-        pet.feed();
-        pet.walk();
-        pet.play();
-        /* проверяем является ли класс потомком MammalPetWithFur
-           Если да, то делаем приведение класса и обращаемся к нужному нам методу
-        */
-        if (pet instanceof MammalPetWithFur) {
-            ((MammalPetWithFur) pet).comb();
+    public static void care(Pet... pets) {
+        for (Pet pet : pets) {//позволяет пройти по всему массиву параметров
+            pet.care();
         }
-
 
     }
 

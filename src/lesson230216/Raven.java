@@ -1,9 +1,10 @@
 package lesson230216;
 
-public class Parrot extends Pet implements Chirikable {
+public class Raven extends Pet implements Chirikable {
+
     @Override
     public void chirik() {
-        System.out.println("Сам дуууурааак!)");
+        System.out.println("Kaaaarrr");
     }
 
     @Override
