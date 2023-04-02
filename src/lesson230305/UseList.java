@@ -8,6 +8,7 @@ public class UseList {
         list.add("One");
         list.add("Two");
         list.add("Three");
+
         System.out.println(list);
     }
 }
