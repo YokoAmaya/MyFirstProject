@@ -1,6 +1,7 @@
 package lesson230514_2;
 
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class UseList {
     public static void main(String[] args) {
