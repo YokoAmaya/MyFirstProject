@@ -19,6 +19,8 @@ public class UseStack {
             stack.push("three");
         } catch (StackOverflowException e) {
             System.out.println(e.getMessage());
+        }finally {
+
         }
         System.out.println("End");
 

@@ -2,7 +2,7 @@ package exception;
 
 //Пример IllegalArgumentException
 //Проверяемое исключение - во время компиляции
-//Относиться к общим программным исключениям
+//Относится к общим программным исключениям
 public class GFG {
 
     // Main driver method
